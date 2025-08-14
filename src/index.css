@@ -1,14 +1,30 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.messages::-webkit-scrollbar {
+    width: 6px; /* Makes the scrollbar thinner */
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.messages::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 3px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 3px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar color on hover */
+}
+
+/* For Firefox */
+.messages {
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+    scrollbar-color: #888 #f1f1f1; /* thumb and track color */
 }

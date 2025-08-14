@@ -1,0 +1,22 @@
+.nav-container{
+    background-color: rgb(57, 57, 233);
+    color: rgb(207, 213, 220);
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-items{
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.nav-items:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
