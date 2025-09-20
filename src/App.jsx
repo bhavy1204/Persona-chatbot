@@ -1,15 +1,14 @@
-import './App.css'
-import ChatApp from './ChatApp'
-import Navbar from './Navbar'
+import { useState } from "react";
+import Navbar from "./Navbar";
+import ChatApp from "./ChatApp";
 
-function App() {
+export default function App() {
+    const [botId, setBotId] = useState("hitesh"); // default bot
 
-  return (
-    <>
-      <Navbar />
-      <ChatApp />
-    </>
-  )
+    return (
+        <div>
+            <Navbar onBotChange={setBotId} />
+            <ChatApp botId={botId} />
+        </div>
+    );
 }
-
-export default App
